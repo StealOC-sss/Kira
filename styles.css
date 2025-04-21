@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+.editable-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    position: relative;
+}
+
+.content {
+    min-height: 100px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    margin: 10px 0;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 8px 15px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005a9e;
+}
+
+[contenteditable="true"] {
+    outline: none;
+}
+
+[contenteditable="true"]:focus {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 1px #0078d7;
+}
+
+.edit-mode [contenteditable="true"] {
+    background-color: #f9f9f9;
+    min-height: 20px;
+    min-width: 50px;
+}
+
+.add-section {
+    margin-top: 10px;
+}
+
+#add-menu-item {
+    margin-left: 10px;
+    padding: 2px 8px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Универсальный редактор контента</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="site-title" contenteditable="true">Название сайта</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#" contenteditable="true">Главная</a></li>
+                    <li><a href="#" contenteditable="true">О нас</a></li>
+                    <li><a href="#" contenteditable="true">Контакты</a></li>
+                </ul>
+                <button id="add-menu-item">+</button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="editable-section">
+                <h2 contenteditable="true">Заголовок раздела</h2>
+                <div contenteditable="true" class="content">
+                    <p>Это пример текста. Нажмите, чтобы редактировать.</p>
+                    <p>Вы можете изменить все что угодно на этой странице.</p>
+                </div>
+                <button class="add-section">Добавить раздел</button>
+            </section>
+        </main>
+
+        <footer>
+            <div contenteditable="true">
+                © 2023 Мой сайт. Все права защищены.
+            </div>
+        </footer>
+    </div>
+
+    <div class="controls">
+        <button id="edit-toggle">Режим редактирования: ВКЛ</button>
+        <button id="save-content">Сохранить изменения</button>
+        <button id="reset-content">Сбросить</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
